@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.ardidong.cobaslf4j",
+    "sha256_cert_fingerprints":
+    ["00:D8:FA:D5:E2:4F:A5:26:23:46:DB:92:F4:6A:F0:D6:49:49:72:6C:05:25:ED:45:02:9B:36:A7:D4:2B:D9:B3"]
+  }
+}]
