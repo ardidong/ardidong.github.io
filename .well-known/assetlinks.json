@@ -1,9 +1,5 @@
 [{
-	  "relation": ["delegate_permission/common.handle_all_urls"],
-	  "target" : { 
-	  "namespace": "android_app", 
-	  "package_name": "io.ionic.helloworld",
-	   "sha256_cert_fingerprints": 
-	   ["F7:BE:F9:2A:B2:A9:BB:44:AA:93:84:AA:27:1F:37:8B:25:2D:2A:F2:61:57:68:79:07:52:1D:2F:51:90:0D:C4"] 
-	}
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "io.ionic.starter",
+               "sha256_cert_fingerprints": ["88:71:CD:CB:15:A6:F6:D8:87:F5:34:11:C1:2C:2D:12:A9:4E:05:71:3E:56:FB:B7:F3:88:C6:D8:70:8A:DD:8F"] }
 }]
