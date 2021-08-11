@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:web_app/pages/widget_about.dart';
+import 'package:web_app/pages/widget_resume.dart';
 import 'package:web_app/widgets/drawer.dart';
-import 'package:web_app/widgets/home_widget.dart';
 import 'package:web_app/widgets/resolution_widget.dart';
+import 'package:web_app/widgets/widget_home.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -31,7 +33,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     _drawerController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+        AnimationController(vsync: this, duration: Duration(milliseconds: 100));
     final Animation _curveAnimation =
         CurvedAnimation(parent: _drawerController, curve: Curves.easeInOutCirc);
     _drawerTween = Tween(begin: -250.0, end: 0.0).animate(_curveAnimation);
@@ -66,7 +68,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     image: DecorationImage(
                       colorFilter: new ColorFilter.mode(
                           Colors.black.withOpacity(0.9), BlendMode.dstATop),
-                      image: NetworkImage(
+                      image: giNetworkImage(
                           'https://images.pexels.com/photos/1591305/pexels-photo-1591305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
                       fit: BoxFit.cover,
                     ),
@@ -78,6 +80,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   child: ListView(
                     children: [
                       HomeWidget(),
+                      AboutWidget(),
+                      ResumeWidget(),
                     ],
                   ),
                 )
